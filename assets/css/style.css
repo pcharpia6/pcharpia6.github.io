@@ -3,6 +3,25 @@ body {
     margin:0;
 }
 
+#default {
+    position: fixed;
+    height: 700px;
+    width: 80%;
+    z-index: 20;
+    background-image: url(../images/construction.jpg);
+    background-position: center;
+    background-size: cover;
+    top: 0px;
+    right: 10%;
+}
+
+#def-h1 {
+    position: relative;
+    margin: 40px;
+    top: 200px;
+
+}
+
 .link {
     background-color: coral;
     color: white;

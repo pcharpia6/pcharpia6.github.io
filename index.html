@@ -9,9 +9,11 @@
     <meta name="Philip M. Charpia">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -27,23 +29,23 @@
 
         </div>
     </div>
-    <div class="navbar fixed-top container-fluid">
+    <div id="nav" class="navbar fixed-top container-fluid">
         <ul class="list-group list-group-horizontal-md">
-            <li>Main</li>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li> 
+            <li><a class="nav-link" href="#lander">Main</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li> 
         </ul>
     </div>
-    <div id="lander" class="container-fluid text-center">
+    <div name="lander" id="lander" class="container-fluid text-center">
         <div class="text">
-            <div class="inner-text">Hello - </div>
+            <div class="inner-text"><a name="lander"></a>Hello - </div>
             <div id="name">I'm Philip Charpia.</div>
             <div class="inner-text">I write software.</div>
         </div>
         
     </div>
-    <div id="about" class="container-fluid">
+    <div name="about" id="about" class="container-fluid">
         <div class="container">
             <div class="title">About Me</div>
             <img id="headshot" src="assets/images/headshot.JPG">
@@ -61,21 +63,21 @@
             </div>
         </div>
     </div>
-    <div id="portfolio" class="container-fluid justify-content-around">
+    <div name="portfolio" id="portfolio" class="container-fluid justify-content-around">
         <div class="title">My Recent Works</div>
         <div class="container">
             <a href="https://neighborgood-reac-mongodb.herokuapp.com/" target="_blank">
-                <div class="card" style="width: 18rem;">
+                <div class="card p-card" style="width: 18rem;">
                     <img src="assets/images/nbrhood.jpg" class="card-img-top pic" alt="nbrhood.jpg">
                     <div class="card-body">
                         <h5 class="card-title">NeighborGood!</h5>
-                        <p class="card-text">An app similar in concept to Nextdoor - post events and items for sale to users within your neighborhood. View and save local events for later review.</p>
+                        <p class="card-text">An app similar in concept to Nextdoor - post events and items for sale for other users to view. View and save local events from Eventbrite and other users for later review.</p>
                         <p class="card-text"><b>Tech:</b> MERN</p>
                     </div>
                 </div>
             </a>
             <a href="https://pcharpia6.github.io/Clicky-Game/" target="_blank">
-                <div class="card" style="width: 18rem;">
+                <div class="card p-card" style="width: 18rem;">
                     <img src="assets/images/turtle.jpeg" class="card-img-top pic" alt="turtle.jpeg">
                     <div class="card-body">
                         <h5 class="card-title">Clicky-Game</h5>
@@ -85,7 +87,7 @@
                 </div>
             </a>          
             <a href="https://unch-project-2-group-4.herokuapp.com/" target="_blank">
-                <div class="card" style="width: 18rem;">
+                <div class="card p-card" style="width: 18rem;">
                     <img src="assets/images/japanese-doors.jpeg" class="card-img-top pic" alt="japanese-doors.jpeg">
                     <div class="card-body">
                         <h5 class="card-title">Ding-su</h5>
@@ -95,7 +97,7 @@
                 </div>
             </a>
             <a href="https://hidden-beach-70010.herokuapp.com/" target="_blank">    
-                <div class="card" style="width: 18rem;">
+                <div class="card p-card" style="width: 18rem;">
                     <img src="assets/images/burger.jpeg" class="card-img-top pic" alt="burger.jpeg">
                     <div class="card-body">
                         <h5 class="card-title">Eat-The-Burger</h5>
@@ -106,7 +108,7 @@
                 </div>
             </a>
             <a href="https://pcharpia6.github.io/UNCH-Project-1/" target="_blank">
-                <div class="card" style="width: 18rem;">
+                <div class="card p-card" style="width: 18rem;">
                     <img src="assets/images/diner.jpg" class="card-img-top pic" alt="diner.jpg">
                     <div class="card-body">
                         <h5 class="card-title">Grab-a-Bite</h5>
@@ -117,8 +119,39 @@
             </a>
         </div>
     </div>
-    <div class="contact container-fluid">
-        <div class="title">Contact Information</div>
+    <div name="contact" class="container-fluid" id="contact">
+        <div class="title">Get in Touch</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-around">
+                    <div class="card" style="width: 14rem;">
+                        <i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
+                        <div class="card-body">
+                            <p class="card-text text-center">(843) 670-3631</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 14rem;">
+                        <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+                        <div class="card-body">
+                            <p class="card-text text-center">pcharpia6@ymail.com</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 14rem;">
+                        <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+                        <div class="card-body">
+                            <p class="card-text text-center">https://github.com/pcharpia6</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 14rem;">
+                        <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
+                        <div class="card-body">
+                            <p class="card-text text-center">https://www.linkedin.com/in/philip-charpia-866010121/</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
     <div class="footer">
 

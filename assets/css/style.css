@@ -5,7 +5,7 @@
     float: left;
 }
 
-.lander {
+#lander {
     background-image: url("../images/background.jpeg");
     height: 100vh;
 }
@@ -32,14 +32,89 @@ li {
     padding: 10px 20px;
 }
 
-.about {
+.title {
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+    color: darkblue;
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.title::before {
+    content:"";
+    z-index: 6;
+    background-color: teal;
+    position: absolute;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    bottom: -7px;
+    left: calc(50% - 7px);
+}
+
+.title::after {
+    content:"";
+    z-index: 4;
+    background-color: grey;
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    bottom: 0;
+    left: calc(50% - 50px);
+}
+
+#about {
     background-color: white;
-    height: 100vh;
+    height: 70vh;
 }
 
 #headshot {
-    margin: 50px;
     max-height: 400px;
+    padding: 15px;
     float: left;
 }
 
+.about-text {
+    font-size: 1.2rem;
+    max-width: 50%;
+    float: left;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+#portfolio {
+    min-height: 70vh;
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+.card {
+    margin: 30px 20px;
+    float: left;
+    max-width: 28%;
+    min-height: 440px;
+}
+
+.pic {
+    max-height: 190px;
+}
+
+.card-title {
+    background-color: lightgrey;
+    position: absolute;
+    top:20px;
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.btn {
+    bottom:15px;
+    position: absolute;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}

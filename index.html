@@ -8,7 +8,6 @@
     <meta name="Portfolio" content="Philip Charpia - Portfolio">
     <meta name="Philip M. Charpia">
 
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -18,6 +17,8 @@
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -34,7 +35,7 @@
             <li>Contact</li> 
         </ul>
     </div>
-    <div class="lander container-fluid text-center">
+    <div id="lander" class="container-fluid text-center">
         <div class="text">
             <div class="inner-text">Hello - </div>
             <div id="name">I'm Philip Charpia.</div>
@@ -42,21 +43,87 @@
         </div>
         
     </div>
-    <div class="about container-fluid">
-        <img id="headshot" src="assets/images/headshot.JPG">
-        <div id="about-title">About Me</div>
-        <div class="about-text"></div>
+    <div id="about" class="container-fluid">
+        <div class="container">
+            <div class="title">About Me</div>
+            <img id="headshot" src="assets/images/headshot.JPG">
+            <div class="about-text">
+                I'm Philip Charpia: full-stack web developer with a focus on MERN technologies.
+            </div>
+            <div class="about-text">
+                I really enjoy using Javascript to make a page functional, and working with the data transfer from front-end to back-end. 
+            </div>
+            <div class="about-text">
+                In addition to web-development I am working on an IoT solution in C#, working with Docker, InfluxDB, and Grafana.
+            </div>
+            <div class="about-text">
+                My never-ending desire to learn is consistently sated by the depth of information available about software development, and I love it!    
+            </div>
+        </div>
     </div>
-    <div class="portfolio container-fluid">
-
+    <div id="portfolio" class="container-fluid justify-content-around">
+        <div class="title">My Recent Works</div>
+        <div class="container">
+            <a href="https://neighborgood-reac-mongodb.herokuapp.com/" target="_blank">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/nbrhood.jpg" class="card-img-top pic" alt="nbrhood.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">NeighborGood!</h5>
+                        <p class="card-text">An app similar in concept to Nextdoor - post events and items for sale to users within your neighborhood. View and save local events for later review.</p>
+                        <p class="card-text"><b>Tech:</b> MERN</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://pcharpia6.github.io/Clicky-Game/" target="_blank">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/turtle.jpeg" class="card-img-top pic" alt="turtle.jpeg">
+                    <div class="card-body">
+                        <h5 class="card-title">Clicky-Game</h5>
+                        <p class="card-text">A React.js game. Click each of the unique 12 characters, without clicking the same one twice, in order to win.</p>
+                        <p class="card-text"><b>Tech:</b> React.js</p>
+                    </div>
+                </div>
+            </a>          
+            <a href="https://unch-project-2-group-4.herokuapp.com/" target="_blank">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/japanese-doors.jpeg" class="card-img-top pic" alt="japanese-doors.jpeg">
+                    <div class="card-body">
+                        <h5 class="card-title">Ding-su</h5>
+                        <p class="card-text">Join the community of gamers wishing to become more skilled by receiving constructive feedback from professional gamers and community contributors!</p>
+                        <p class="card-text"><b>Tech:</b> mySQL, Node</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://hidden-beach-70010.herokuapp.com/" target="_blank">    
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/burger.jpeg" class="card-img-top pic" alt="burger.jpeg">
+                    <div class="card-body">
+                        <h5 class="card-title">Eat-The-Burger</h5>
+                        <p class="card-text">Make a burger, eat a burger.</p>
+                        <p class="card-text"><b>Tech:</b> Javascript, jQuery, mySQL, Node</p>
+                        
+                    </div>
+                </div>
+            </a>
+            <a href="https://pcharpia6.github.io/UNCH-Project-1/" target="_blank">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/diner.jpg" class="card-img-top pic" alt="diner.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Grab-a-Bite</h5>
+                        <p class="card-text">This app uses geolocation to populate a map with nearby restaurants.</p>
+                        <p class="card-text"><b>Tech:</b> Javascript, jQuery, Ajax, Leaflet.js</p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
     <div class="contact container-fluid">
-
+        <div class="title">Contact Information</div>
     </div>
     <div class="footer">
 
     </div>
-  <script src="javascript.js"></script>
+  <script src="./assets/javascript/main.js"></script>
 </body>
 
 </html>
